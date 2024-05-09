@@ -1,0 +1,122 @@
+/* Existing CSS before media query */
+.home {
+    width: 100%;
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)), url('../../assets/church.jpg');
+    background-size: cover;
+    background-position: center; 
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.home-text {
+    text-align: center;
+    max-width: 800px;
+}
+
+.home-text h1 {
+    font-size: 60px;
+    font-weight: 600;
+    margin: 0 0 70px;
+}
+
+.home-text p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.4;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.home-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+}
+
+.search-bar {
+    position: absolute;
+    bottom: 190px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background-color: #f2f2f2;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.search-bar input {
+    width: 100%;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 18px;
+    color: #333;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #5C67F2;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #4a54e1;
+}
+
+/* Media query for screen width 620px and below */
+@media (max-width: 620px) {
+    .home {
+        flex-direction: column;
+        justify-content: flex-start; /* Adjusts content alignment */
+        padding-top: 20px; /* Adds space on top for better view */
+    }
+
+    .home-text h1 {
+        font-size: 40px; /* Smaller font size for smaller screens */
+        margin-bottom: 30px; /* Reduced spacing */
+    }
+
+    .home-text p {
+        font-size: 16px; /* Smaller text for better readability on small devices */
+        padding: 0 20px; /* Adds padding for text not to touch the edges */
+    }
+
+    .home-btn {
+        font-size: 16px; /* Smaller font size */
+        padding: 8px 16px; /* Adjusted padding */
+    }
+
+    .search-bar {
+        bottom: 100px; /* Adjust position to not overlap other elements */
+        width: 90%; /* Increase width to utilize more space */
+    }
+}

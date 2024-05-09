@@ -1,0 +1,36 @@
+.footer {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin: 10px auto;
+  border-top: 1px solid #797979;
+  padding: 10px 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  position: relative;
+}
+
+.footer ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/* Media Query for screens 620px wide or less */
+@media (max-width: 620px) {
+  .footer {
+      flex-direction: column;  /* Stack the flex items vertically */
+      align-items: flex-start; /* Align items to the start of the flex container */
+      padding: 10px 5%;         /* Adjust padding to be more suitable for smaller screens */
+  }
+
+  .footer ul {
+      width: 100%;             /* Make the ul take full width to utilize space */    /* Center align the text in the ul */
+      padding: 0;              /* Remove padding */
+  }
+
+  .footer ul li {
+      display: block;          /* Stack the list items vertically */
+      margin: 10px 0;          /* Adjust margin for vertical stacking */
+  }
+}

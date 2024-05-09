@@ -1,0 +1,62 @@
+.container {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+h3 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 10px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.video-library,
+.about-us,
+.forum {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    padding: 15px;
+    transition: background-color 0.3s;
+    border-radius: 30px;
+   
+}
+
+.video-library:hover,
+.forum:hover,
+.about-us:hover {
+    background-color: #ccc;
+}
+
+.about-us p,
+.video-library p,
+.forum p {
+    margin: 0;
+}
+
+.NavLink {
+    text-decoration: none;
+    color: #333;
+    margin-top: 10px;
+    font-size: 20px;
+}

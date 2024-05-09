@@ -1,0 +1,94 @@
+/* .home {
+    width: 100%;
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)), url('../../assets/church.jpg');
+    background-size: cover;
+    background-position: center; 
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+} */
+
+.watch-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+  
+}
+
+.video-section {
+    padding-right: 200px; /* Adjust the padding-right if needed */
+    flex-grow: 1; /* Allows the section to grow and fill the container */
+    
+    margin-top: 100px;
+}
+
+.latest-message {
+    display: flex;
+    align-items: center;
+    background: #0047AB; /* Dark blue background */
+    color: white;
+    border-radius: 10px;
+    width: 100%; /* Ensures it fills the space within its container */
+    min-height: 500px;
+}
+
+.latest-message img {
+    width: 150px; /* Adjust size as needed */
+    border-radius: 50%; /* Circle image */
+    margin-right: 20px;
+}
+
+
+.latest-message p {
+    font-weight: bold;
+    
+}
+
+.latest-message button {
+    background-color: #00BFFF; /* Light blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.recent-messages {
+    flex: 1;
+    background: #f4f4f4; /* Light background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 20px; /* Adds space between this section and the video section */
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.recent-messages h3 {
+    margin-top: 0;
+    text-align: center;
+    font-size:xx-large;
+}
+
+.recent-messages ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recent-messages li {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.recent-messages h4 {
+    margin: 0;
+}
+
+.recent-messages p {
+    color: #666;
+}
