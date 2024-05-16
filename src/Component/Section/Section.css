@@ -55,8 +55,24 @@ h3 {
 }
 
 .NavLink {
+    padding-left: 40px;
     text-decoration: none;
     color: #333;
     margin-top: 10px;
     font-size: 20px;
+}
+/* Media Query for screens smaller than 768px */
+@media (max-width: 762px) {
+    .section {
+        grid-template-columns: 1fr; /* Stack them vertically on smaller screens */
+        justify-items: center; /* Center-align the items horizontally */
+        width: 100%; /* Ensures the section takes the full width of its container */
+        padding: 20px 0; /* Adjust padding to remove horizontal padding, if necessary */
+        box-sizing: border-box; /* Ensures padding is included in the width calculation */
+    }
+    .container {
+        padding: 0; /* Remove padding from container to allow full width usage */
+        margin: 0; /* Remove margin to fit the section tightly to the viewport edges */
+        height: 100vh; /* Optional: Makes the container take full viewport height */
+    }
 }
