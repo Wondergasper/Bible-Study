@@ -1,15 +1,15 @@
 
 import { NavLink, useLocation } from 'react-router-dom';
 import logo from '../../assets/Logo.png';  // Import the image here
-import './Navbar.css';
+import './Logo.css';
 
 const Logo = () => {
   const location = useLocation()
-  const isVideoLibraryPage = location.pathname === '/Stream';
+  const isHomePage = location.pathname === '/';
 
   return (
-    <NavLink to="/" className={isVideoLibraryPage ? 'video-page-logo' : 'logo'}>
-      <img src={logo} className={isVideoLibraryPage ? 'video-page-logo-img' : 'logo-img'} alt="Logo" /> 
+    <NavLink to="/" className={isHomePage ? 'home-page-logo' : 'logo'}>
+      <img src={logo} className='logo-img' alt="Logo" /> 
     </NavLink>
   );
 };

@@ -1,18 +1,21 @@
 .container {
-    width: 100%;
-    padding: 20px;
+    width: 100vw;
+    /* padding: 20px auto; */
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border-radius: 20px;
-    margin: 20px 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     background-color: #fff;
 }
 
 .section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    align-items: center;
     gap: 20px;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 img {
@@ -33,13 +36,20 @@ h3 {
 .video-library,
 .about-us,
 .forum {
+    width: 30vw;
+    min-height: auto;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
     box-shadow: 0 0 20px rgba(0,0,0,0.05);
     padding: 15px;
     transition: background-color 0.3s;
     border-radius: 30px;
-   
 }
 
 .video-library:hover,
@@ -54,25 +64,31 @@ h3 {
     margin: 0;
 }
 
+.section-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
 .NavLink {
-    padding-left: 40px;
     text-decoration: none;
     color: #333;
-    margin-top: 10px;
     font-size: 20px;
 }
 /* Media Query for screens smaller than 768px */
-@media (max-width: 762px) {
-    .section {
-        grid-template-columns: 1fr; /* Stack them vertically on smaller screens */
-        justify-items: center; /* Center-align the items horizontally */
-        width: 100%; /* Ensures the section takes the full width of its container */
-        padding: 20px 0; /* Adjust padding to remove horizontal padding, if necessary */
-        box-sizing: border-box; /* Ensures padding is included in the width calculation */
-    }
+@media (max-width: 786px) {
+    
     .container {
         padding: 0; /* Remove padding from container to allow full width usage */
         margin: 0; /* Remove margin to fit the section tightly to the viewport edges */
-        height: 100vh; /* Optional: Makes the container take full viewport height */
+    }
+    .section {
+        flex-direction: column; /* Stack the items vertically */
+    }
+
+    .video-library,
+    .about-us,
+    .forum {
+        width: 85vw;
     }
 }

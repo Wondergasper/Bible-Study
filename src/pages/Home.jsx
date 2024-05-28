@@ -1,8 +1,8 @@
-import React from 'react'
 import Hero from '../Component/Hero/Hero'
 import Section from '../Component/Section/Section'
 
-const Homee = () => {
+
+const Home = () => {
   return (
     <div>
         <Hero />
@@ -11,4 +11,4 @@ const Homee = () => {
   )
 }
 
-export default Homee
+export default Home

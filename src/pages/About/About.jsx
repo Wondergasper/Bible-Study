@@ -1,4 +1,6 @@
 import './About.css'; // Make sure to import the CSS file
+import celebrating from '../../assets/celebrating.jpg';
+
 
 const About = () => {
   return (
@@ -10,13 +12,14 @@ const About = () => {
           <p>Our first service was held on April 6, 1980. Over the next 43 years, we witnessed God perform miracle after miracle as we moved locations, raised money for permanent buildings, launched campuses in California and around the world, and baptized over 50,000 people.</p>
           <p>In September 2022, we welcomed Pastor Andy Wood as our new lead pastor.</p>
           <p>As we step into the future, we are believing God will do more than we could ever ask for or imagine. Our best days are ahead, and we cannot wait to see all the ways God will change lives in years to come!</p>
+          <div className="cta">
+            <button aria-label="Plan your visit to our church">Plan A Visit</button>
+          </div>
         </div>
+        
         <div className="image">
-          <img src="your-image-path.jpg" alt="Church members celebrating" />
+          <img src={celebrating} alt="Church members celebrating" />
         </div>
-      </div>
-      <div className="cta">
-        <button aria-label="Plan your visit to our church">Plan A Visit</button>
       </div>
     </div>
   );

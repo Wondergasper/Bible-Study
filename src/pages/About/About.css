@@ -16,6 +16,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin-top: 10%;
   }
   
@@ -25,6 +26,8 @@
     font-family: 'Arial', sans-serif;
     color: #333;
     line-height: 1.6;
+    font-size: 20px;
+    font-weight: 100;
   }
   
   .image {
@@ -34,14 +37,14 @@
   }
   
   .image img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 8px; /* Rounded corners for the image */
   }
   
   .cta {
     margin-top: 30px;
-    padding: 20px;
+    padding: 20px 0;
   }
   
   .cta button {
@@ -58,4 +61,9 @@
   .cta button:hover {
     background-color:#004c99; /* Darken button color on hover for visual feedback */
   }
-  
+
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column-reverse;
+    }
+  }

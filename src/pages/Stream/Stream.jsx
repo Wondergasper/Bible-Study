@@ -2,7 +2,8 @@ import './Stream.css';
 import play_icon from '../../assets/play-icon.png'
 
 function Stream() {
-return (<div className="container">
+return (
+<div className="container">
   <div className="main-content">
     <div className="video-presentation">
       <div className="video-info">

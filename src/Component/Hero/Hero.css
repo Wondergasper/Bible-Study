@@ -1,14 +1,16 @@
 /* Existing CSS before media query */
 .home {
-    width: 100%;
-    margin: 0;
+    width: 100vw;
+    padding: 10rem 0 0;
     min-height: 100vh;
     background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)), url('../../assets/church.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center; 
     color: #fff;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     position: relative;
     overflow: hidden;
@@ -22,7 +24,7 @@
 .home-text h1 {
     font-size: 60px;
     font-weight: 600;
-    margin: 0 0 70px;
+    margin: 0 0 40px;
 }
 
 .home-text p {
@@ -54,7 +56,7 @@
 
 .search-bar {
     position: absolute;
-    bottom: 190px;
+    bottom: 150px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -98,6 +100,10 @@
         flex-direction: column;
         justify-content: flex-start; /* Adjusts content alignment */
         padding-top: 20px; /* Adds space on top for better view */
+    }
+
+    .home-text {
+        padding-top: 10rem; /* Adds space on top for better view */;
     }
 
     .home-text h1 {

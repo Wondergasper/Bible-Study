@@ -1,29 +1,21 @@
 .container {
   display: flex;
   justify-content: space-between;
-
-}
-
-.header {
-  font-size: 24px;
-  font-weight: bold;
-  padding-bottom: 20px;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 20px;
 }
 
 .main-content {
-  flex-grow: 1;
-  margin-right: 10%;
-  margin-top: 100px;
+  flex: 1;
+  aspect-ratio: 16 / 9; 
 }
 
 .video-presentation {
   background-color: #004BA0;
   padding: 20px;
   color: white;
-  height: 60vh;
   border-radius: 24px;
-  width: 100%;
-  height: auto;
   aspect-ratio: 16 / 9;
   background-size: cover;
   background-position: center;
@@ -63,14 +55,11 @@
 .sidebar {
   background-color: #f4f4f4;
   padding:20px; /* Reduced for more moderate spacing */
-  padding-left: 20px;
-  padding-right: 10px;
   border-radius: 24px;
   display: flex;
+  flex: 1;
   flex-direction: column;
   transition: all 0.3s ease-in-out;
-  margin-top: 90px;
-  width: 395px; /* Adjust width as needed */
 }
 
 .sidebar h3 {
@@ -138,13 +127,8 @@
   color: #666;
 }
 
-
-
-
-@media (min-width: 744px) {
-  .recent-messages {
-    padding: 32px;
-  }
+.recent-messages {
+  padding: 32px;
 }
 
 * {
@@ -185,4 +169,23 @@
   margin-right: 10px;  /* Space between icon and text */
   width: 20px;         /* Icon size */
   height: auto;        /* Maintain aspect ratio */
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  .main-content {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
