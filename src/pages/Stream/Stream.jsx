@@ -20,7 +20,7 @@ return (
     </div>
   </div>
 
-  <aside className="sidebar">
+  <aside className="side-bar">
     <h3>Recent Messages</h3>
     <ul className="message-list">
       <li className="message"> <span>Peace in My Relationships</span> <span>Andy Wood | April 28, 2024</span> </li>

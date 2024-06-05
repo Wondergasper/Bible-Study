@@ -13,7 +13,12 @@ const About = () => {
           <p>In September 2022, we welcomed Pastor Andy Wood as our new lead pastor.</p>
           <p>As we step into the future, we are believing God will do more than we could ever ask for or imagine. Our best days are ahead, and we cannot wait to see all the ways God will change lives in years to come!</p>
           <div className="cta">
-            <button aria-label="Plan your visit to our church">Plan A Visit</button>
+          
+            <button aria-label="Plan your visit to our church">
+            <a href="https://maps.app.goo.gl/ofJnfb8h3yxbRG5j6" className="button-link">
+      plan a visit
+    </a>
+            </button>
           </div>
         </div>
         

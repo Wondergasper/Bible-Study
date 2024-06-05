@@ -1,10 +1,9 @@
 import './footer.css'
 import logo from '../../assets/flame.png'
-
 // Import icons
-import { FaFacebook } from "react-icons/fa";
+import { FaFacebook} from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
@@ -19,8 +18,8 @@ return (
       <h3>Follow us</h3>
       <ul>
         <li><a href="https://www.facebook.com/"><FaFacebook className='facebook' /></a></li>
-        <li><a href="https://www.instagram.com/"><FaInstagram className='instagram'/></a></li>
-        <li><a href="https://www.linkedin.com/"><FaLinkedin className='linkedin'/></a></li>
+        <li><a href="https://www.instagram.com/rccgpottersflame/"><FaInstagram className='instagram'/></a></li>
+        <li><a href="https://youtube.com/@rccgpottersflameteenschurch46?si=ncgrGkiSOMgEz4Z_"><FaYoutube className='linkedin'/></a></li>
         <li><a href="https://www.twitter.com/"><FaTwitter className='twitter'/></a></li>
       </ul>
     </div>
@@ -31,7 +30,6 @@ return (
       <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor
         volutpat.</p>
     </div>
-
     <div className="footer-section">
       <h3>Company</h3>
       <ul className='footer-links'>
@@ -55,7 +53,7 @@ return (
     <div className="footer-section">
       <h3>Contact Us</h3>
       <ul className='footer-links'>
-        <li>Call: +1 719-504-1984</li>
+        <li>Call:+234</li>
         <li>Email: pify@gmail.com</li>
         <li>Address: 7200 E Dry Creek Rd C104, Centennial, CO 80112, United States</li>
       </ul>

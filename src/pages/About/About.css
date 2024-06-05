@@ -61,6 +61,14 @@
   .cta button:hover {
     background-color:#004c99; /* Darken button color on hover for visual feedback */
   }
+  
+  .search-bar button:hover {
+    background-color: #4a54e1; /* Slightly darker on hover for interaction feedback */
+  }
+  .button-link{
+    color: #fff;
+    text-decoration: none;
+  }
 
   @media (max-width: 768px) {
     .content {
